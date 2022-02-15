@@ -4,7 +4,7 @@ from tqdm import tqdm
 import time
 
 import alpaca_trade_api as tradeapi
-
+from alpaca_trade_api.rest import REST, TimeFrame
 
 def break_period_in_dates_list(start_date, end_date, days_per_step):
     '''Break period between start_date and end_date in steps of days_per_step days.'''
@@ -52,9 +52,15 @@ def download_data(aps, symbols, start_date, end_date, filename='data.csv'):
 
 
 # Call method.
-aps = tradeapi.REST(key_id='57ba0f433806ebb8cf74bbea8edad97f',
-                    secret_key='52c7f9f8e056d2882693ab3b1668055e9ffe2fc4',
+# aps = tradeapi.REST(key_id='57ba0f433806ebb8cf74bbea8edad97f',
+#                     secret_key='52c7f9f8e056d2882693ab3b1668055e9ffe2fc4',
+#                     base_url='https://paper-api.alpaca.markets')
+
+aps = tradeapi.REST(key_id='946be299bd81418abf78a6f27fff17e3',
+                    secret_key='46b65e9e3a333529501a82e8f76853e6c122cd5b',
                     base_url='https://paper-api.alpaca.markets')
+api = REST()
+api.get_bars("AAPL", TimeFrame.Hour, "2021-06-08", "2021-06-08", adjustment='raw').df
 
 download_data(aps=aps,
               symbols=['AAPL', 'GOOG'],
