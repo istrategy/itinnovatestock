@@ -1,0 +1,467 @@
+Symbol,Name,Price (Intraday),Change,% Change,PE Ratio (TTM)
+BHG.JO,BHP Group Limited,50720.00,-790.00,-0.02,1491.38
+PRX.JO,Prosus N.V.,116520.00,1020.00,0.01,607.75
+ANH.JO,Anheuser-Busch InBev SA/NV,94313.00,727.00,0.01,2499.46
+BTI.JO,British American Tobacco p.l.c.,70483.00,403.00,0.01,1152.91
+CFR.JO,Compagnie Financière Richemont SA,21870.00,670.00,0.03,3042.21
+GLN.JO,Glencore plc,8825.00,245.00,0.03,3858.96
+AGL.JO,Anglo American plc,72235.00,-767.00,-0.01,875.00
+AMS.JO,Anglo American Platinum Limited,191044.00,-2181.00,-0.01,715.59
+NPN.JO,Naspers Limited,230859.00,2140.00,0.01,429.44
+ABSP.JO,Absa Bank Limited,83700.00,-300.00,0.00,4665.29
+FSR.JO,FirstRand Limited,6575.00,197.00,0.03,1379.53
+MTN.JO,MTN Group Limited,18351.00,-393.00,-0.02,4434.82
+SBK.JO,Standard Bank Group Limited,16064.00,606.00,0.04,1280.93
+VOD.JO,Vodacom Group Limited,14965.00,136.00,0.01,1614.88
+CPI.JO,Capitec Bank Holdings Limited,208110.00,-3227.00,-0.02,3111.67
+S32.JO,South32 Limited,4880.00,-70.00,-0.01,N/A
+KIO.JO,Kumba Iron Ore Limited,66092.00,-1035.00,-0.02,564.89
+SOLBE1.JO,Sasol Limited,16900.00,0.00,0.00,1174.43
+SOL.JO,Sasol Limited,32171.00,-1760.00,-0.05,2229.81
+MNP.JO,Mondi plc,39096.00,926.00,0.02,1884.71
+IMP.JO,Impala Platinum Holdings Limited,23312.00,-615.00,-0.03,391.20
+CPIP.JO,Capitec Bank Holdings Limited,11000.00,0.00,0.00,164.36
+SSW.JO,Sibanye Stillwater Limited,5856.00,-304.00,-0.05,378.39
+GFI.JO,Gold Fields Limited,17997.00,-447.00,-0.02,1120.41
+ABG.JO,Absa Group Limited,17938.00,361.00,0.02,1097.19
+SLM.JO,Sanlam Limited,6607.00,96.00,0.01,1373.31
+ANG.JO,AngloGold Ashanti Limited,31835.00,-465.00,-0.01,984.76
+SHP.JO,Shoprite Holdings Limited,22754.00,519.00,0.02,2602.63
+BID.JO,Bid Corporation Limited,33460.00,479.00,0.01,3625.43
+DSY.JO,Discovery Limited,16347.00,197.00,0.01,3436.90
+NED.JO,Nedbank Group Limited,21476.00,816.00,0.04,1424.38
+INPP.JO,Investec plc,10700.00,0.00,0.00,16212.12
+DSBP.JO,Discovery Limited,9640.00,0.00,0.00,2027.77
+APN.JO,Aspen Pharmacare Holdings Limited,20701.00,457.00,0.02,1966.47
+PPH.JO,Pepkor Holdings Limited,2336.00,63.00,0.03,1785.93
+NPH.JO,Northam Platinum Holdings Limited,20995.00,-77.00,0.00,830.12
+REM.JO,Remgro Limited,13798.00,408.00,0.03,2207.19
+RMI.JO,Rand Merchant Investment Holdings Limited,4927.00,37.00,0.01,2614.32
+CLS.JO,Clicks Group Limited,30215.00,349.00,0.01,4060.63
+BVT.JO,The Bidvest Group Limited,20908.00,-292.00,-0.01,1849.00
+EXX.JO,Exxaro Resources Limited,19376.00,161.00,0.01,434.21
+OMU.JO,Old Mutual Limited,1380.00,18.00,0.01,1735.52
+NRP.JO,NEPI Rockcastle plc,10655.00,128.00,0.01,2480.44
+INP.JO,Investec Group,8979.00,-61.00,-0.01,1070.50
+RNI.JO,Reinet Investments S.C.A.,32050.00,60.00,0.00,1232.08
+MRP.JO,Mr Price Group Limited,21638.00,247.00,0.01,1882.62
+MCG.JO,MultiChoice Group Limited,12910.00,386.00,0.03,5283.61
+MEI.JO,Mediclinic International plc,6978.00,131.00,0.02,2103.99
+WHL.JO,Woolworths Holdings Limited,5320.00,-11.00,0.00,1240.73
+N91.JO,Ninety One Group,5520.00,112.00,0.02,1335.59
+NY1.JO,Ninety One Group,5500.00,134.00,0.03,1330.75
+GRT.JO,Growthpoint Properties Limited,1431.00,28.00,0.02,N/A
+ARI.JO,African Rainbow Minerals Limited,24746.00,-743.00,-0.03,386.72
+QLT.JO,Quilter plc,2900.00,29.00,0.01,3737.11
+RBP.JO,Royal Bafokeng Platinum Limited,15986.00,-274.00,-0.02,593.94
+TFG.JO,The Foschini Group Limited,13391.50,189.50,0.01,N/A
+DGH.JO,Distell Group Holdings Limited,17062.00,17.00,0.00,1943.72
+VVO.JO,Vivo Energy plc,2700.00,-4.00,0.00,1610.98
+LHC.JO,Life Healthcare Group Holdings Limited,2395.00,62.00,0.03,1990.86
+HMN.JO,Hammerson plc,764.00,5.00,0.01,N/A
+HAR.JO,Harmony Gold Mining Company Limited,5544.00,-311.00,-0.05,672.73
+SPP.JO,The SPAR Group Ltd,17537.00,487.00,0.03,1493.10
+TCP.JO,Transaction Capital Limited,4612.00,135.00,0.03,1378.02
+TBS.JO,Tiger Brands Limited,17798.00,446.00,0.03,1575.13
+DCP.JO,Dis-Chem Pharmacies Limited,3656.00,-6.00,0.00,4053.22
+SRE.JO,Sirius Real Estate Limited,2743.00,16.00,0.01,1063.57
+CCO.JO,Capital & Counties Properties PLC,3450.00,-32.00,-0.01,N/A
+SAP.JO,Sappi Limited,5291.00,-183.00,-0.03,1331.74
+SNT.JO,Santam Ltd,26834.00,-81.00,0.00,2027.04
+BAW.JO,Barloworld Limited,14395.00,-80.00,-0.01,1046.30
+TXT.JO,Textainer Group Holdings Limited,59000.00,801.00,0.01,716.09
+MTM.JO,Momentum Metropolitan Holdings Limited,1960.00,-28.00,-0.01,6261.98
+LBH.JO,Liberty Holdings Limited,10477.00,277.00,0.03,2834.33
+NTCP.JO,Netcare Limited,8800.00,0.00,0.00,16206.26
+RDF.JO,Redefine Properties Limited,417.00,12.00,0.03,828.69
+AVI.JO,AVI Limited,7450.00,81.00,0.01,1498.19
+INL.JO,Investec Group,9030.50,-49.50,-0.01,1076.23
+PIK.JO,Pick n Pay Stores Limited,4979.00,99.00,0.02,2172.13
+BYI.JO,Bytes Technology Group plc,9285.00,505.00,0.06,4805.90
+TRU.JO,Truworths International Limited,5820.00,68.00,0.01,1220.38
+MTH.JO,Motus Holdings Limited,11315.00,245.00,0.02,1019.37
+MKR.JO,"Montauk Renewables, Inc.",15201.00,18.00,0.00,N/A
+TKG.JO,Telkom SA SOC Limited,4145.00,-20.00,0.00,772.23
+NTC.JO,Netcare Limited,1502.00,16.00,0.01,2766.11
+ITE.JO,Italtile Limited,1639.00,33.00,0.02,1121.07
+RES.JO,Resilient REIT Limited,5959.00,107.00,0.02,N/A
+FFA.JO,Fortress REIT Limited,1335.00,52.00,0.04,856.32
+SNH.JO,Steinhoff International Holdings N.V.,440.00,21.00,0.05,N/A
+KST.JO,PSG Konsult Limited,1390.00,-19.00,-0.01,2380.14
+PSG.JO,PSG Group Ltd,8741.00,4.00,0.00,238.77
+CML.JO,Coronation Fund Managers Limited,5020.00,77.00,0.02,1028.69
+TGA.JO,Thungela Resources Limited,11667.00,-318.00,-0.03,N/A
+EQU.JO,Equites Property Fund Limited,2141.00,16.00,0.01,815.62
+LTE.JO,Lighthouse Properties plc,944.00,8.00,0.01,N/A
+APH.JO,Alphamin Resources Corp.,1519.00,30.00,0.02,4931.82
+MSP.JO,MAS P.L.C.,2119.00,-1.00,0.00,1209.47
+KRO.JO,Karooooo Ltd.,51500.00,-1100.00,-0.02,3352.43
+RCL.JO,RCL Foods Limited,1395.00,-105.00,-0.07,1248.88
+IAP.JO,Irongate Group,1991.00,12.00,0.01,1967.39
+IPL.JO,Imperial Logistics Limited,6449.00,-1.00,0.00,1318.81
+SPG.JO,Super Group Limited,3488.00,37.00,0.01,1228.60
+VKE.JO,Vukile Property Fund Limited,1298.00,58.00,0.05,759.95
+HYP.JO,Hyprop Investments Limited,3625.00,10.00,0.00,N/A
+AFE.JO,AECI Ltd,11692.00,52.00,0.00,2975.82
+KAP.JO,KAP Industrial Holdings Limited,480.00,15.00,0.03,1253.26
+MLI.JO,Industrials REIT Limited,4074.00,-25.00,-0.01,837.58
+TSG.JO,Tsogo Sun Gaming Limited,1126.00,26.00,0.02,1313.89
+CAC.JO,CAFCA Limited,125.00,0.00,0.00,905.80
+MSM.JO,Massmart Holdings Limited,5105.00,-49.00,-0.01,N/A
+AFEP.JO,AECI Ltd,1430.00,0.00,0.00,363.96
+DRD.JO,DRDGOLD Limited,1243.00,-17.00,-0.01,74.34
+OMN.JO,Omnia Holdings Limited,6434.00,187.00,0.03,660.71
+EPP.JO,EPP N.V.,1126.00,27.00,0.02,N/A
+ACL.JO,ArcelorMittal South Africa Ltd,899.00,14.00,0.02,386.50
+JSE.JO,JSE Limited,11903.00,325.00,0.03,1532.71
+IPF.JO,Investec Property Fund Limited,1187.00,25.00,0.02,1860.50
+ADH.JO,ADvTECH Limited,1737.00,-13.00,-0.01,1602.40
+JBL.JO,Jubilee Metals Group PLC,336.00,-4.00,-0.01,913.04
+AFT.JO,Afrimat Limited,6316.00,-34.00,-0.01,1182.33
+AIL.JO,African Rainbow Capital Investments Limited,620.00,22.00,0.04,849.32
+DTC.JO,Datatec Limited,3758.00,-3.00,0.00,4270.45
+AIP.JO,Adcock Ingram Holdings Limited,4933.00,-157.00,-0.03,1245.39
+COH.JO,Curro Holdings Limited,1331.00,-19.00,-0.01,121000.00
+RLO.JO,Reunert Limited,4920.00,10.00,0.00,1022.87
+THA.JO,Tharisa plc,2850.00,50.00,0.02,501.41
+PAN.JO,Pan African Resources PLC,392.00,-14.00,-0.03,664.41
+FBR.JO,Famous Brands Limited,7295.00,-39.00,-0.01,1859.55
+ARL.JO,Astral Foods Limited,18044.00,80.00,0.00,1482.66
+RBX.JO,Raubex Group Limited,3775.00,-68.00,-0.02,1504.58
+OCE.JO,Oceana Group Limited,5801.00,-17.00,0.00,916.14
+CSB.JO,Cashbuild Limited,29356.00,135.00,0.00,1001.02
+HCI.JO,Hosken Consolidated Investments Limited,8200.00,86.00,0.01,N/A
+PPC.JO,PPC Ltd,427.00,3.00,0.01,783.49
+SSS.JO,Stor-Age Property REIT Limited,1472.00,3.00,0.00,660.68
+SUI.JO,Sun International Limited,2558.00,66.00,0.03,N/A
+BAT.JO,Brait PLC,455.00,-12.00,-0.03,472.97
+WBO.JO,Wilson Bayly Holmes-Ovcon Limited,10941.00,-12.00,0.00,1841.92
+GSH.JO,Grindrod Shipping Holdings Ltd.,29703.00,-247.00,-0.01,741.28
+SAC.JO,SA Corporate Real Estate Limited,245.00,13.00,0.06,N/A
+AFH.JO,Alexander Forbes Group Holdings Limited,410.00,7.00,0.02,3474.58
+EMI.JO,Emira Property Fund Limited,1073.00,-7.00,-0.01,1123.56
+OAO.JO,Oando PLC,49.00,-21.00,-0.30,N/A
+MTA.JO,Metair Investments Limited,2844.00,-6.00,0.00,763.90
+MUR.JO,Murray & Roberts Holdings Limited,1370.00,8.00,0.01,N/A
+ATT.JO,Attacq Limited,759.00,12.00,0.02,3513.89
+ZED.JO,Zeder Investments Ltd.,335.00,-5.00,-0.01,418.75
+MPT.JO,Mpact Limited,3350.00,148.00,0.05,1103.06
+TGO.JO,Tsogo Sun Hotels Limited,330.00,-5.00,-0.01,N/A
+HDC.JO,Hudaco Industries Limited,15849.00,87.00,0.01,984.41
+GNDP.JO,Grindrod Limited,8429.00,0.00,0.00,N/A
+REN.JO,Renergen Limited,3824.00,154.00,0.04,N/A
+BLU.JO,Blue Label Telecoms Limited,504.00,-3.00,-0.01,551.42
+MTNZF.JO,MTN Zakhele Futhi (RF) Limited,3500.00,-150.00,-0.04,N/A
+SHG.JO,Sea Harvest Group Limited,1501.00,2.00,0.00,906.40
+MIX.JO,MiX Telematics Limited,745.00,0.00,0.00,3267.54
+L2D.JO,Liberty Two Degrees Limited,461.00,1.00,0.00,4752.58
+NT1.JO,"Net 1 UEPS Technologies, Inc.",7200.00,0.00,0.00,N/A
+LBR.JO,Libstar Holdings Limited,642.00,17.00,0.03,7734.94
+L4L.JO,Long4life Limited,592.00,2.00,0.00,1106.54
+IVT.JO,Invicta Holdings Limited,3422.00,12.00,0.00,525.73
+GML.JO,Gemfields Group Limited,310.00,-2.00,-0.01,N/A
+DIA.JO,Dipula Income Fund Limited,940.00,27.00,0.03,1173.53
+FFB.JO,Fortress REIT Limited,377.00,-1.00,0.00,241.82
+KAL.JO,Kaap Agri Limited,5029.00,160.00,0.03,1113.10
+DIB.JO,Dipula Income Fund Limited,400.00,0.00,0.00,499.38
+CLI.JO,Clientèle Limited,1025.00,-10.00,-0.01,876.82
+GND.JO,Grindrod Limited,507.00,2.00,0.00,N/A
+RFG.JO,RFG Holdings Limited,1268.00,-7.00,-0.01,1544.46
+MRF.JO,Merafe Resources Limited,130.00,-2.00,-0.02,610.33
+CAT.JO,Caxton and CTP Publishers and Printers Limited,890.00,-5.00,-0.01,600.95
+HIL.JO,HomeChoice International plc,3000.00,1.00,0.00,1779.36
+SDO.JO,Stadio Holdings Limited,370.00,-6.00,-0.02,9736.84
+LEW.JO,Lewis Group Limited,4901.00,51.00,0.01,738.99
+AEL.JO,Altron Limited,837.00,4.00,0.00,26.29
+PPE.JO,Purple Group Limited,262.00,-22.00,-0.08,6093.02
+CLH.JO,City Lodge Hotels Limited,519.00,11.00,0.02,N/A
+WEZ.JO,Wesizwe Platinum Limited,166.00,-1.00,-0.01,207.24
+AEG.JO,Aveng Limited,2200.00,40.00,0.02,178.05
+ACT.JO,AfroCentric Investment Corporation Limited,470.00,0.00,0.00,919.77
+NPK.JO,Nampak Limited,405.00,25.00,0.07,1261.68
+YYLBEE.JO,YeboYethu (RF) Limited,4851.00,-50.00,-0.01,110.65
+SYG.JO,Sygnia Limited,1702.00,-27.00,-0.02,1107.35
+SZK.JO,SAB Zenzele Kabili Holdings (RF) Limited,6200.00,-80.00,-0.01,N/A
+TDH.JO,Tradehold Limited,986.00,1.00,0.00,N/A
+SBP.JO,Sabvest Capital Limited,6220.00,119.00,0.02,327.96
+RMH.JO,RMB Holdings Limited,170.00,0.00,0.00,N/A
+CTA.JO,Capital Appreciation Limited,185.00,0.00,0.00,1401.52
+OCT.JO,Octodec Investments Limited,835.00,39.00,0.05,N/A
+ACS.JO,Acsion Limited,540.00,-4.00,-0.01,361.45
+CMH.JO,Combined Motor Holdings Limited,2811.00,11.00,0.00,632.40
+CRP.JO,Capital & Regional Plc,1240.00,0.00,0.00,N/A
+TTO.JO,Trustco Group Holdings Limited,125.00,-10.00,-0.07,N/A
+AVV.JO,Alviva Holdings Limited,1721.00,-24.00,-0.01,664.74
+SUR.JO,Spur Corporation Ltd,2326.00,-114.00,-0.05,2104.98
+MDI.JO,Master Drilling Group Limited,1248.00,38.00,0.03,1642.11
+BRN.JO,Brimstone Investment Corporation Limited,739.00,39.00,0.06,749.49
+DRA.JO,DRA Global Limited,3100.00,0.00,0.00,915.26
+ARH.JO,ARB Holdings Limited,778.00,0.00,0.00,955.77
+EMN.JO,eMedia Holdings Limited,400.00,10.00,0.03,890.87
+SEA.JO,Spear Reit Limited,845.00,-6.00,-0.01,1446.92
+UPL.JO,Universal Partners Limited,2300.00,100.00,0.05,215.50
+EMH.JO,eMedia Holdings Limited,390.00,-42.00,-0.10,868.60
+ENX.JO,enX Group Limited,839.00,-11.00,-0.01,507.56
+BWN.JO,Balwin Properties Limited,318.00,-2.00,-0.01,402.53
+BEL.JO,Bell Equipment Limited,1565.00,65.00,0.04,1016.89
+MFL.JO,Metrofile Holdings Limited,335.00,1.00,0.00,1073.72
+BRT.JO,Brimstone Investment Corporation Limited,650.00,0.00,0.00,659.23
+ORN.JO,Orion Minerals Limited,34.00,0.00,0.00,N/A
+FTH.JO,Frontier Transport Holdings Limited,487.00,21.00,0.05,568.93
+AYO.JO,AYO Technology Solutions Limited,410.00,0.00,0.00,N/A
+EPE.JO,EPE Capital Partners Ltd,520.00,0.00,0.00,28888.89
+SAR.JO,Safari Investments RSA Limited,509.00,18.00,0.04,405.90
+TEX.JO,Texton Property Fund Limited,375.00,15.00,0.04,646.55
+HLM.JO,Hulamin Limited,414.00,13.00,0.03,1468.09
+GPL.JO,Grand Parade Investments Limited,274.00,0.00,0.00,N/A
+EOH.JO,EOH Holdings Limited,554.00,0.00,0.00,N/A
+YRK.JO,York Timber Holdings Limited,356.00,-4.00,-0.01,809.09
+QFH.JO,Quantum Foods Holdings Ltd,540.00,0.00,0.00,1018.87
+ILU.JO,Indluplace Properties Limited,325.00,-5.00,-0.02,N/A
+APF.JO,Accelerate Property Fund Limited,101.00,-1.00,-0.01,N/A
+CHP.JO,Choppies Enterprises Limited,77.00,-1.00,-0.01,1132.35
+TPF.JO,Transcend Residential Property Fund Limited,600.00,0.00,0.00,443.13
+SFN.JO,Sasfin Holdings Limited,3100.00,46.00,0.02,1285.24
+MST.JO,Mustek Limited,1509.00,-6.00,0.00,355.48
+NVS.JO,Novus Holdings Limited,275.00,5.00,0.02,N/A
+FGL.JO,Finbond Group Limited,100.00,7.00,0.08,N/A
+DNB.JO,Deneb Investments Limited,195.00,14.00,0.08,537.19
+MMP.JO,Marshall Monteagle PLC,2250.00,0.00,0.00,2992.02
+PBG.JO,PBT Group Limited,945.00,45.00,0.05,1569.77
+TRE.JO,Trencor Limited,455.00,3.00,0.01,N/A
+TMT.JO,Trematon Capital Investments Limited,348.00,0.00,0.00,N/A
+SNV.JO,Santova Limited,560.00,-2.00,0.00,782.12
+BCF.JO,Bowler Metcalf Limited,1060.00,-35.00,-0.03,891.51
+WSL.JO,Wescoal Holdings Limited,180.00,0.00,0.00,2142.86
+KP2.JO,Kore Potash plc,20.00,0.00,0.00,N/A
+ART.JO,Argent Industrial Limited,1270.00,0.00,0.00,445.77
+TPC.JO,Transpaco Limited,2189.00,39.00,0.02,648.78
+ADR.JO,Adcorp Holdings Limited,595.00,45.00,0.08,2163.64
+NWL.JO,Nu-World Holdings Limited,3111.00,-189.00,-0.06,474.82
+OLG.JO,OneLogix Group Limited,295.00,5.00,0.02,5900.00
+RACP.JO,RECM and Calibre Limited,1275.00,0.00,0.00,640.70
+HUG.JO,Huge Group Limited,371.00,-3.00,-0.01,125.89
+CKS.JO,Crookes Brothers Limited,4000.00,1.00,0.00,N/A
+ATI.JO,Afristrat Investment Holdings Limited,1.00,0.00,0.00,N/A
+TON.JO,Tongaat Hulett Limited,413.00,6.00,0.01,29.39
+ALH.JO,Alaris Holdings Limited,418.00,0.00,0.00,1091.38
+CND.JO,Conduit Capital Limited,70.00,1.00,0.01,N/A
+CGR.JO,Calgro M3 Holdings Limited,390.00,0.00,0.00,464.29
+VUN.JO,Vunani Limited,280.00,10.00,0.04,1879.19
+AEE.JO,African Equity Empowerment Investments Limited,85.00,1.00,0.01,N/A
+ISB.JO,Insimbi Industrial Holdings Limited,99.00,-1.00,-0.01,507.69
+DLT.JO,Delta Property Fund Limited,57.00,-4.00,-0.07,N/A
+SEP.JO,Sephaku Holdings Limited,155.00,-19.00,-0.11,584.91
+RHB.JO,RH Bophelo Limited,575.00,0.00,0.00,298.39
+REA.JO,Rebosis Property Fund Limited,285.00,14.00,0.05,N/A
+ASC.JO,Ascendis Health Limited,73.00,-2.00,-0.03,N/A
+REB.JO,Rebosis Property Fund Limited,24.00,0.00,0.00,N/A
+EPS.JO,Eastern Platinum Limited,371.00,6.00,0.02,804.77
+MHB.JO,Mahube Infrastructure Limited,600.00,0.00,0.00,2076.12
+BIK.JO,Brikor Limited,40.00,0.00,0.00,1290.32
+TRL.JO,Trellidor Holdings Limited,333.00,0.00,0.00,818.18
+BAU.JO,Bauba Resources Limited,42.00,1.00,0.02,N/A
+SOH.JO,South Ocean Holdings Limited,150.00,0.00,0.00,402.14
+WKF.JO,Workforce Holdings Limited,133.00,0.00,0.00,397.01
+ARA.JO,Astoria Investments Ltd,475.00,-25.00,-0.05,184.90
+ANI.JO,Afine Investments Limited,435.00,19.00,0.05,N/A
+AME.JO,African Media Entertainment Limited,3505.00,-264.00,-0.07,3693.36
+GLI.JO,Go Life International Limited,1.00,0.00,0.00,N/A
+AVL.JO,Advanced Health Limited,50.00,0.00,0.00,N/A
+ETO.JO,Etion Limited,44.00,0.00,0.00,214.63
+RTN.JO,Rex Trueform Group Limited,1090.00,0.00,0.00,985.53
+ELI.JO,Ellies Holdings Limited,30.00,0.00,0.00,2142.86
+HUL.JO,Hulisani Limited,430.00,0.00,0.00,632.35
+PFB.JO,Premier Fishing & Brands Limited,77.00,7.00,0.10,N/A
+SEB.JO,Sebata Holdings Limited,167.00,-53.00,-0.24,N/A
+CMO.JO,Chrometco Limited,7.00,1.00,0.17,N/A
+CSG.JO,CSG Holdings Limited,34.00,-1.00,-0.03,290.60
+4SI.JO,4Sight Holdings Limited,26.00,3.00,0.13,N/A
+MCZ.JO,MC Mining Limited,100.00,5.00,0.05,N/A
+PPR.JO,Putprop Limited,365.00,-10.00,-0.03,693.92
+ISA.JO,ISA Holdings Limited,101.00,0.00,0.00,1328.95
+LAB.JO,Labat Africa Limited,28.00,-1.00,-0.03,N/A
+KBO.JO,Kibo Energy PLC,8.00,1.00,0.14,N/A
+JSC.JO,Jasco Electronics Holdings Limited,34.00,-1.00,-0.03,1172.41
+RNG.JO,Randgold & Exploration Company Limited,150.00,8.00,0.06,N/A
+AOO.JO,African and Overseas Enterprises Limited,1650.00,0.00,0.00,1749.73
+AON.JO,African and Overseas Enterprises Limited,800.00,0.00,0.00,848.36
+BUC.JO,Buffalo Coal Corp.,85.00,0.00,0.00,N/A
+PMV.JO,Primeserv Group Limited,113.00,0.00,0.00,416.97
+CGN.JO,Cognition Holdings Limited,64.00,-6.00,-0.09,7111.11
+SSK.JO,Stefanutti Stocks Holdings Limited,49.00,2.00,0.04,N/A
+EUZ.JO,Europa Metals Limited,94.00,1.00,0.01,N/A
+TLM.JO,TeleMasters Holdings Limited,126.00,0.00,0.00,N/A
+AHL.JO,AH-Vest Limited,53.00,0.00,0.00,530.00
+LUX.JO,Luxe Holdings Limited,204.00,-36.00,-0.15,N/A
+NCS.JO,Nictus Limited,65.00,2.00,0.03,596.33
+SCD.JO,Schroder European Real Estate Investment Trust Plc,2300.00,55.00,0.02,2853.60
+ILE.JO,Imbalie Beauty Limited,2.00,0.00,0.00,N/A
+SVB.JO,SilverBridge Holdings Limited,110.00,4.00,0.04,916.67
+ADW.JO,African Dawn Capital Limited,32.00,5.00,0.19,N/A
+VIS.JO,Visual International Holdings Limited,4.00,-1.00,-0.20,N/A
+SHFF.JO,Steinhoff Investment Holdings Limited,8489.00,589.00,0.07,N/A
+STXGBD.JO,Satrix Collective Investment Scheme - Satrix Global Bond ETF,3805.00,21.00,0.01,N/A
+USQCPA.JO,iQ Global Quality Companies ETN,17460.00,-56.00,0.00,N/A
+ASHMID.JO,Ashburton Collective Investment Scheme - Ashburton Mid Cap Exchange Traded Fund,806.00,0.00,0.00,N/A
+FNBMID.JO,Ashburton Collective Investment Scheme - Ashburton Mid Cap Exchange Traded Fund,823.00,16.00,0.02,N/A
+NFEDEF.JO,NewFunds Collective Investment Scheme - NewFunds Volatility Managed Defensive Equity ETF,1111.00,13.00,0.01,N/A
+ADETNQ.JO,FNB ETN on ADOBEQ NOV25,990.00,23.00,0.02,N/A
+NFETNC.JO,FNB ETN on NETFLC SEP25,702.00,7.00,0.01,N/A
+COETNC.JO,FNB ETN on COKEC SEP25,1076.00,25.00,0.02,N/A
+DCCUSD.JO,Dollar Custodial Cert,152020.00,330.00,0.00,N/A
+ETFT40.JO,1nvest Top 40 ETF,6938.00,36.00,0.01,N/A
+NFEHGE.JO,NewFunds Collective Investment Scheme - NewFunds Volatility Managed High Growth Equity ETF,1132.00,19.00,0.02,N/A
+STXEME.JO,Satrix Collective Investment Scheme - MSCI EM ESG Enhanced Feeder Portfolio Fund,4850.00,106.00,0.02,N/A
+STXIND.JO,Satrix Capped INDI ETF,9237.00,167.00,0.02,N/A
+SBPP.JO,Standard Bank Group Limited ZAR0.1 NON RED NON CUM NON PTG PRF,8601.00,-199.00,-0.02,531.75
+TSETNQ.JO,FNB ETN on TESLAQ SEP25,2166.00,86.00,0.04,N/A
+VSETNC.JO,FNB ETN on VISAC NOV25,1108.00,13.00,0.01,N/A
+FNBWGB.JO,Ashburton World Government Bond ETF,723.00,-17.00,-0.02,N/A
+ABSGEA.JO,Absa Global Equity Multi-Factor Risk-Controlled (13%) ETN,12632.00,-215.00,-0.02,N/A
+SYGH.JO,Sygnia Itrix - Solactive Healthcare 150 ETF,2445.00,30.00,0.01,N/A
+SYGUK.JO,Sygnia Itrix FTSE 100 ETF,15634.00,222.00,0.01,N/A
+UABCPA.JO,AnBro Unicorn USD Portfolio 1,19973.00,-5.00,0.00,N/A
+GLOBAL.JO,Coreshares Index Tracker Managers (Rf) Proprietary Limited - CoreShares Total World Stock ETF,1120.00,16.00,0.01,N/A
+SYGT40.JO,Sygnia Itrix Collective Investment Scheme - Sygnia Itrix TOP 40 ETF,6995.00,36.00,0.01,N/A
+ETFWLD.JO,1nvest MSCI World Index Feeder ETF,6416.00,124.00,0.02,N/A
+GLD.JO,NewGold Issuer Limited - NewGold Exchange Traded Fund,26235.00,-114.00,0.00,N/A
+STXCHN.JO,Satrix Collective Investment Scheme - Satrix MSCI China Feeder Fund,4281.00,45.00,0.01,N/A
+STXSWX.JO,Satrix SWIX Top 40 ETF,1332.00,11.00,0.01,N/A
+STXEMG.JO,Satrix Collective Investment Scheme - Satrix MSCI Emerging Markets Feeder Portfolio,5407.00,86.00,0.02,N/A
+STX40.JO,Satrix 40 ETF,6957.00,43.00,0.01,N/A
+AMETNQ.JO,FNB ETN on AMAZONQ SEP25,962.00,26.00,0.03,N/A
+STXRES.JO,Satrix Resi ETF,7870.00,-136.00,-0.02,N/A
+STXFIN.JO,Satrix FINI ETF,1613.00,36.00,0.02,N/A
+NFGOVI.JO,NewFunds Collective Investment Scheme - NewFunds GOVI ETF,8026.00,-15.00,0.00,N/A
+ETFSWX.JO,1nvest Swix 40 ETF,1327.00,10.00,0.01,N/A
+ETFGLD.JO,1nvest Gold ETF,27350.00,-164.00,-0.01,N/A
+STX500.JO,Satrix Collective Investment Scheme - Satrix S&P 500 Feeder Portfolio,6887.00,63.00,0.01,N/A
+SBOIL.JO,Standard Bank Oil ETN,1446.00,6.00,0.00,N/A
+SYGUS.JO,Sygnia Itrix MSCI USA Index ETF,6363.00,70.00,0.01,N/A
+TSETNC.JO,FNB ETN on TESLAC SEP25,1914.00,60.00,0.03,N/A
+SRETNQ.JO,FNB ETN on SRIWLDQ AUG26,984.00,0.00,0.00,N/A
+FNBGSE.JO,UBS FNBGSE 18Mar25,13690.00,0.00,0.00,N/A
+UBROBO.JO,UBS SolRobotics 08Sep26,8549.00,267.00,0.03,N/A
+KCCGLD.JO,Krugerrand Custodial Certificates ETF,2891400.00,1100.00,0.00,N/A
+GSETNQ.JO,FNB ETN on GSACHSQ NOV25,1814.00,9.00,0.01,N/A
+ASHWGB.JO,Ashburton World Government Bond ETF,730.00,0.00,0.00,N/A
+NEWPLT.JO,NewWave Platinum Exchange Traded Note,15156.00,-66.00,0.00,N/A
+SMART.JO,CoreShares Scientific Beta Multi Factor Index ETF,5024.00,52.00,0.01,N/A
+WWETNC.JO,FNB ETN on WATERWC AUG26,976.00,15.00,0.02,N/A
+MWETNC.JO,FNB ETN on ISMSCIC SEP25,1150.00,10.00,0.01,N/A
+UMMIES.JO,UBS UMMIES 02Oct24,12495.00,87.00,0.01,N/A
+ETFGRE.JO,1nvest Global REIT Index Feeder ETF,2250.00,144.00,0.07,N/A
+STXESG.JO,Satrix Collective Investment Scheme - MSCI World ESG Enhanced Feeder Portfolio Fund,5726.00,120.00,0.02,N/A
+SWXTR2.JO,Investec Limited CERT 17/10/2022,24200.00,103.00,0.00,34522.11
+STXIFR.JO,Satrix Collective Investment Scheme - Global Infrastructure Feeder ETF,4857.00,-4.00,0.00,N/A
+COETNQ.JO,FNB ETN on COKEQ SEP25,1194.00,16.00,0.01,N/A
+PPETNQ.JO,FNB ETN on PAYPALQ NOV25,582.00,15.00,0.03,N/A
+STXCAP.JO,Indexco Limited - IndexCo Satrix Capped All Share ETF,3840.00,28.00,0.01,N/A
+ETF5IT.JO,1nvest S&P500 Info Tech Index Feeder ETF,1486.00,19.00,0.01,N/A
+ALETNC.JO,FNB ETN on ALPHAC SEP25,1560.00,34.00,0.02,N/A
+FNBEQF.JO,Ashburton Collective Investment Scheme - Ashburton Global 1200 Equity Exchange Traded Fund,6775.00,124.00,0.02,N/A
+CSPROP.JO,CORESHARES PropTrax Ten,1133.00,25.00,0.02,N/A
+MSETNC.JO,FNB ETN on MICROC SEP25,1260.00,32.00,0.03,N/A
+WWETNQ.JO,FNB ETN on WATERWQ AUG26,958.00,8.00,0.01,N/A
+NEWUSD.JO,NewWave USD Currency Exchange Traded Note,1519.00,5.00,0.00,N/A
+CTOP50.JO,CoreShares S&P South Africa Top50 Exchange Traded Fund,3107.00,19.00,0.01,N/A
+ABETNQ.JO,FNB ETN on ACTIVIQ NOV25,1052.00,15.00,0.01,N/A
+SYG4IR.JO,Sygnia Itrix Collective Investment Scheme - Sygnia Itrix 4th Industrial Revolution Global Equity ETF,4274.00,60.00,0.01,N/A
+ETFPLT.JO,1nvest Platinum ETF,15078.00,-208.00,-0.01,N/A
+GLODIV.JO,CoreShares S&P Global Dividend Aristocrats Exchange Traded Fund,1625.00,26.00,0.02,N/A
+SYGESG.JO,Sygnia Itrix (Rf) Proprietary Ltd - Sygnia Itrix S&P Global 1200 ESG ETF,3908.00,65.00,0.02,N/A
+ETFGGB.JO,1nvest Global Government Bond Index Feeder ETF,8219.00,34.00,0.00,N/A
+NGPLD.JO,NewGold Issuer Limited (RF) - NewPalladium Exchange Traded Fund,33632.00,-433.00,-0.01,N/A
+SYGP.JO,Sygnia Itrix Collective Investment Scheme - Sygnia Itrix Global Property ETF,4523.00,12.00,0.00,N/A
+UBTECU.JO,UBS SolFintech20 08Sep26,7723.00,-59.00,-0.01,N/A
+ASHT40.JO,Ashburton Collective Investment Scheme - Ashburton Top 40 Exchange Traded Fund,6981.00,0.00,0.00,N/A
+URETGP.JO,UBS URETGP 18Mar25,13272.00,-238.00,-0.02,N/A
+MSETNQ.JO,FNB ETN on MICROQ SEP25,1414.00,31.00,0.02,N/A
+BHETNC.JO,FNB ETN on BERKSHC NOV25,1478.00,11.00,0.01,N/A
+UOMWPA.JO,UBS OMWPA 17Oct23,17505.00,85.00,0.00,N/A
+ASBI.JO,Cloud Atlas (RF) Proprietary Limited - AMI Real Estate ETF,9650.00,100.00,0.01,N/A
+NFEVOL.JO,NewFunds Collective Investment - Low Volatility Equity ETF Fund,1034.00,14.00,0.01,N/A
+NEWPRP.JO,Newfunds Reitway Global Property ETF,8244.00,45.00,0.01,N/A
+NGPLT.JO,NewGold Issuer Limited - NewPlat Exchange Traded Fund,14894.00,-268.00,-0.02,N/A
+BHETNQ.JO,FNB ETN on BERKSHQ NOV25,1536.00,12.00,0.01,N/A
+UPCHPA.JO,"UBS AG, London Branch",13300.00,178.00,0.01,N/A
+FNBGEG.JO,UBS FNBGEG 18Mar25,10259.00,306.00,0.03,N/A
+MAPPSP.JO,NewFunds Collective Investment Scheme - NewFunds Multi Asset Passive Portfolio Solutions Protect ETF,4670.00,18.00,0.00,N/A
+FDETNQ.JO,FNB ETN on FORDQ NOV25,2298.00,38.00,0.02,N/A
+FSRP.JO,FirstRand Limited ZAR0.01 NON-CUM 'B' NON-RED,8820.00,-30.00,0.00,1944.87
+NFTRCI.JO,NewFunds Collective Investment Scheme - NewFunds TRACI 3 Month ETF,2868.00,-9.00,0.00,N/A
+ABETNC.JO,FNB ETN on ACTIVIC NOV25,1014.00,16.00,0.02,N/A
+NFETNQ.JO,FNB ETN on NETFLQ SEP25,784.00,7.00,0.01,N/A
+SYGEU.JO,Sygnia Itrix Euro Stoxx 50 ETF,7209.00,170.00,0.02,N/A
+PPETNC.JO,FNB ETN on PAYPALC NOV25,558.00,14.00,0.03,N/A
+ETFSAP.JO,1nvest SA Property ETF,3382.00,82.00,0.02,N/A
+DIVTRX.JO,CoreShares S&P South Africa Dividend Aristocrats Exchange Traded Fund,2280.00,-1.00,0.00,N/A
+NFEMOM.JO,NewFunds Collective Investment Scheme - NewFunds Equity Momentum ETF,4370.00,50.00,0.01,N/A
+PREFTX.JO,CORESHARES Preftrax,989.00,-8.00,-0.01,N/A
+PREFTX.JO,CORESHARES Preftrax,989.00,-8.00,-0.01,N/A
+JPETNQ.JO,FNB ETN on JPMORGQ NOV25,1496.00,13.00,0.01,N/A
+STXNDQ.JO,Satrix Collective Investment Scheme - Satrix Nasdaq 100 Feeder Portfolio,12533.00,308.00,0.03,N/A
+INPR.JO,Investec Limited NON RED NON CUM NON PTG PRF ZAR0.01,8956.00,-43.00,0.00,12776.04
+NEWGBP.JO,NewWave GBP Currency Exchange Traded Note,2045.00,-1.00,0.00,N/A
+FNBINF.JO,Ashburton Government Inflation Linked Bond Fund,2269.00,20.00,0.01,N/A
+FDETNC.JO,FNB ETN on FORDC NOV25,2212.00,37.00,0.02,N/A
+SYG500.JO,Sygnia Itrix Collective Investment Scheme - Sygnia Itrix S&P 500 ETF,6820.00,64.00,0.01,N/A
+UMMIEA.JO,"UBS AG, London Branch 0% NTS 25/08/23 ZAR100",12733.00,116.00,0.01,N/A
+MCETNQ.JO,FNB ETN on MCDOQ SEP25,1222.00,14.00,0.01,N/A
+MAPPSG.JO,NewFunds Collective Investment Scheme - NewFunds Multi Asset Passive Portfolio Solutions Growth ETF,2759.00,6.00,0.00,N/A
+ASHINF.JO,Ashburton Government Inflation Linked Bond Fund,2250.00,0.00,0.00,N/A
+NEWEUR.JO,NewWave EUR Currency Exchange Traded Note,1712.00,0.00,0.00,N/A
+NFILBI.JO,NewFunds Collective Investment Scheme - NewFunds ILBI ETF,8120.00,-26.00,0.00,N/A
+ASHEQF.JO,Ashburton Collective Investment Scheme - Ashburton Global 1200 Equity Exchange Traded Fund,6884.00,0.00,0.00,N/A
+EGETNC.JO,FNB ETN on ENERGYC AUG26,840.00,22.00,0.03,N/A
+UEFPCA.JO,EFPC Global Equity Note,16127.00,127.00,0.01,N/A
+SBCOP.JO,Standard Bank Copper ETN,702.00,18.00,0.03,N/A
+STXQUA.JO,Indexco managers (Proprietay) Limited - Satrix Collective Investment Scheme Fund,863.00,2.00,0.00,N/A
+ADETNC.JO,FNB ETN on ADOBEC NOV25,940.00,9.00,0.01,N/A
+UEFPCB.JO,UBS UEFPCB 10Sep24,10438.00,-26.00,0.00,N/A
+ALETNQ.JO,FNB ETN on ALPHAQ SEP25,1758.00,48.00,0.03,N/A
+FNBT40.JO,Ashburton Collective Investment Scheme - Ashburton Top 40 Exchange Traded Fund,6914.00,2.00,0.00,N/A
+AMETNC.JO,FNB ETN on AMAZONC SEP25,860.00,25.00,0.03,N/A
+FAETNQ.JO,FNB ETN on FACEBQ SEP25,794.00,8.00,0.01,N/A
+SYGJP.JO,Sygnia Itrix MSCI Japan Index ETF,1564.00,4.00,0.00,N/A
+APETNQ.JO,FNB ETN on APPLEQ SEP25,1418.00,17.00,0.01,N/A
+STXMMT.JO,Satrix Momentum ETF,1276.00,0.00,0.00,N/A
+FTB.JO,Arrowhead Properties Limited,342.00,-1.00,0.00,1943.18
+TOPTR2.JO,Investec Limited CERT 17/10/2022,11265.00,69.00,0.01,16069.90
+STXRAF.JO,Satrix RAFI 40 ETF,2140.00,17.00,0.01,N/A
+STXGOV.JO,Satrix Collective Investment Scheme - Satrix SA Bond Portfolio ETF,852.00,-21.00,-0.02,N/A
+STXILB.JO,Satrix Collective Investment Scheme - Satrix ILBI Portfolio,705.00,9.00,0.01,N/A
+NFNAMB.JO,Newfunds (Proprietary) Limited - NewFunds S&P Namibia Bond ETF,1667.00,12.00,0.01,N/A
+ETF500.JO,1nvest S&P500 Index Feeder ETF,34246.00,322.00,0.01,N/A
+MCETNC.JO,FNB ETN on MCDOC SEP25,1088.00,9.00,0.01,N/A
+STXWDM.JO,Satrix Collective Investment Scheme - Satrix MSCI World Feeder Portfolio,6446.00,114.00,0.02,N/A
+NFEVAL.JO,NewFunds Collective Investments - Value Equity ETF Fund,1243.00,7.00,0.01,N/A
+ETFRHO.JO,1nvest Rhodium ETF,254000.00,-4972.00,-0.02,N/A
+APETNC.JO,FNB ETN on APPLEC SEP25,1278.00,27.00,0.02,N/A
+STXDIV.JO,Satrix DIVI ETF,335.00,3.00,0.01,N/A
+UABSPA.JO,UBS ABSPA 22Aug23,14224.00,250.00,0.02,N/A
+UMMIEB.JO,"UBS AG, London Branch 0% NTS 25/08/23 ZAR 100",12766.00,0.00,0.00,N/A
+IBLIIP.JO,IB ZARBASKET ETN 11AUG26,103820.00,7709.00,0.08,N/A
+FTA.JO,Arrowhead Properties Limited,1529.00,0.00,0.00,8687.50
+GSETNC.JO,FNB ETN on GSACHSC NOV25,1744.00,8.00,0.00,N/A
+DCCUS2.JO,2YR Dollar Custodial Cert,148340.00,-90.00,0.00,N/A
+JPETNC.JO,FNB ETN on JPMORGC NOV25,1456.00,29.00,0.02,N/A
+NEWSLV.JO,NewWave Silver Exchange Traded Note,342.00,-5.00,-0.01,N/A
+NFSH40.JO,NewFunds Collective Investment Scheme - NewFunds Shari'ah Top 40 Index Exchange Traded Fund,456.00,-3.00,-0.01,N/A
+VSETNQ.JO,FNB ETN on VISAQ NOV25,1150.00,12.00,0.01,N/A
+GIVISA.JO,NewFunds Collective Investment Scheme - NewFunds S&P GIVI SA Top 50 ETF,4344.00,35.00,0.01,N/A
+EGETNQ.JO,FNB ETN on ENERGYQ AUG26,808.00,14.00,0.02,N/A
+SYGEMF.JO,Sygnia Itrix - Msci Emerging Markets 50 Etf,1745.00,21.00,0.01,N/A
+IVTP.JO,Invicta Holdings Limited,8650.00,50.00,0.01,1328.93
+GLPROP.JO,CoreShares Global Investments PCC - CoreShares S&P Global Property Exchange Traded Fund,4424.00,46.00,0.01,N/A
+SYGWD.JO,Sygnia Itrix MSCI World Index ETF,4692.00,68.00,0.01,N/A
+STXID.JO,Satrix Collective Investment Scheme - Inclusion and Diversity ETF,3314.00,32.00,0.01,N/A
+ETFPLD.JO,1nvest Palladium ETF,33300.00,-786.00,-0.02,N/A
+SYGSW4.JO,Sygnia Itrix Collective Investment Scheme - Sygnia Itrix SWIX 40 ETF,1331.00,3.00,0.00,N/A
+AMIB50.JO,Cloud Atlas AMI Big50 ex-SA ETF,720.00,5.00,0.01,N/A
+STXPRO.JO,Satrix Collective Investment Scheme - Satrix Property Portfolio,1025.00,34.00,0.03,N/A
+MWETNQ.JO,FNB ETN on ISMSCIQ SEP25,1292.00,11.00,0.01,N/A
+FAETNC.JO,FNB ETN on FACEBC SEP25,714.00,12.00,0.02,N/A
+NFEMOD.JO,NewFunds Collective Investment Scheme - NewFunds Volatility Managed Moderate Equity ETF,1108.00,17.00,0.02,N/A
+CSP500.JO,CoreShares Global Investments PCC - CoreShares S&P 500 Exchange Traded Fund,6805.00,130.00,0.02,N/A
