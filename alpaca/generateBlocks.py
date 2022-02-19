@@ -132,8 +132,8 @@ class updateData:
 
 updaeObj = updateData()
 
-# startDate = "2010-01-01"
-startDate = "2021-11-01"
+startDate = "2010-01-01"
+# startDate = "2021-11-01"
 # endDate = date.today()
 endDate = '2022-01-01'
 # print(startDate, endDate)
