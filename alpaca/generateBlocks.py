@@ -83,12 +83,14 @@ class updateData:
                     myresult = mycursor.fetchall()
                     for target in myresult:
                         targetArray.append([str(fromDate), self.setLabel(lastValue,target[3]),target[2],lastValue, target[3]])
+                        newStartDate = str(target[0])
                         # print(targetArray)
                 shareCounter += 1
 
             if exitFunc == False:
                 batchArray.append(block)
-            fromDate = str(lastDate)
+            # fromDate = str(lastDate)
+            fromDate = str(newStartDate)
 
 
         batchNp = np.array(batchArray)
