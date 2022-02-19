@@ -5,6 +5,10 @@ import time
 import datetime
 from datetime import date
 import yfinance as yf
+import numpy as np
+import pandas as pd
+import json
+
 
 
 class updateData:
@@ -49,11 +53,13 @@ class updateData:
             block = []
             shareCounter = 0
             for item in shareArray:
+                targetDateStart = fromDate
                 row = []
                 itemSql = "select price.tdate, company.name, company.symbol, price.close from company \
                                             left outer join price on company.id = price.company_id \
                                             WHERE company.symbol LIKE '" + item + "' and tdate >= '" + fromDate + "'  and tdate <= '" + toDate + "'\
-                                            order by company.name,price.tdate limit 1,"+str(blocksize)
+                                            order by company.name,price.tdate limit 0,"+str(blocksize)
+                # print(itemSql)
                 mycursor = mydb.cursor()
                 rowCounter = mycursor.execute(itemSql)
                 myresult = mycursor.fetchall()
@@ -71,11 +77,12 @@ class updateData:
                 if shareCounter == 0 and exitFunc == False:
                     itemSql = "select price.tdate, company.name, company.symbol, price.close from company \
                                                                 left outer join price on company.id = price.company_id \
-                                                                WHERE company.symbol LIKE '" + item + "' and tdate > '" + str(lastDate) + "'  "
+                                                                WHERE company.symbol LIKE '" + item + "' and tdate > '" + str(lastDate) + "' LIMIT 1 "
+                    # print(itemSql)
                     mycursor.execute(itemSql)
                     myresult = mycursor.fetchall()
                     for target in myresult:
-                        targetArray.append([str(fromDate), self.setLabel(lastValue,target[3]),lastValue, target[3]])
+                        targetArray.append([str(fromDate), self.setLabel(lastValue,target[3]),target[2],lastValue, target[3]])
                         # print(targetArray)
                 shareCounter += 1
 
@@ -84,14 +91,21 @@ class updateData:
             fromDate = str(lastDate)
 
 
-
+        batchNp = np.array(batchArray)
         print(batchArray)
-        print(targetArray)
-        print(lastDate)
+
+        # targetNp = np.array(targetArray)
+        # print(print(targetNp))
+
+        # pd.DataFrame(batchNp).to_csv("batch.csv")
+        # print(batchArray)
+        # print(targetArray)
+        # print(lastDate)
 
         mycursor.close()
         mydb.close()
 
+        return json.dumps(targetArray)
 
 
 
@@ -99,11 +113,12 @@ class updateData:
 updaeObj = updateData()
 
 startDate = "2010-01-01"
+startDate = "2021-12-01"
 # endDate = date.today()
 endDate = '2022-01-01'
-print(startDate, endDate)
+# print(startDate, endDate)
 shareArray=['SLM.JO','ABG.JO','SOL.JO','TKG.JO']
 
 blocksize = 10
 
-updaeObj.generateBlocks(shareArray, startDate, endDate, blocksize)
+print(updaeObj.generateBlocks(shareArray, startDate, endDate, blocksize))
