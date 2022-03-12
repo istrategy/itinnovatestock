@@ -10,6 +10,8 @@ import pandas as pd
 import json
 import os
 import csv
+from functions.IGTD_Functions import min_max_transform, table_to_image
+
 
 class updateData:
     # filename = './data/JSE202202151d.csv'
@@ -134,24 +136,53 @@ class updateData:
         return json.dumps(targetArray)
 
     def test(self):
+        num_row = 2  # Number of pixel rows in image representation
+        num_col = 10  # Number of pixel columns in image representation
+        num = num_row * num_col  # Number of features to be included for analysis, which is also the total number of pixels in image representation
+        save_image_size = 3  # Size of pictures (in inches) saved during the execution of IGTD algorithm.
+        max_step = 10000  # The maximum number of iterations to run the IGTD algorithm, if it does not converge.
+        val_step = 300  # The number of iterations for determining algorithm convergence. If the error reduction rate
+        # is smaller than a pre-set threshold for val_step itertions, the algorithm converges.
 
-        data = pd.read_csv('./Data/Data.txt', low_memory=False, sep='\t', engine='c', na_values=['na', '-', ''],
+        # data = pd.read_csv('./Data/Data.txt', low_memory=False, sep='\t', engine='c', na_values=['na', '-', ''],
+        #                    header=0, index_col=0)
+        data = pd.read_csv('./Data/SLM.JO/2010-01-01__2010-01-15__2262.0_LABEL_down_0-2perc.csv', low_memory=False, sep=',', engine='c', na_values=['na', '-', ''],
                            header=0, index_col=0)
-        newdata = pd.read_csv('./Data/SLM.JO/2010-01-01__2010-01-15__2262.0_LABEL_down_0-2perc.csv', low_memory=False, sep=',', engine='c', na_values=['na', '-', ''],
-                           header=0, index_col=0)
-        print(newdata.shape)
+        print(data.shape)
+        data = data.iloc[:, :num]
+        norm_data = min_max_transform(data.values)
+        norm_data = pd.DataFrame(norm_data, columns=data.columns, index=data.index)
         # print(data.index)
         # print(data.info())
         # print(data.shape)
         # print(data.count())
-
+        fea_dist_method = 'Euclidean'
+        image_dist_method = 'Euclidean'
+        error = 'abs'
+        result_dir = '../Results/Test_1'
+        os.makedirs(name=result_dir, exist_ok=True)
+        table_to_image(norm_data, [num_row, num_col], fea_dist_method, image_dist_method, save_image_size,
+                       max_step, val_step, result_dir, error)
+        # fea_dist_method = 'Pearson'
+        # image_dist_method = 'Manhattan'
+        # error = 'squared'
+        # result_dir = '../Results/Test_2'
+        # os.makedirs(name=result_dir, exist_ok=True)
+        # table_to_image(norm_data, [num_row, num_col], fea_dist_method, image_dist_method, save_image_size,
+        #                max_step, val_step, result_dir, error)
         print("ConvertImage")
+
+    def ConvertCSV(inputCsvFile, OutputImageNameAndPath):
+        with open(inputCsvFile) as file:
+            array = np.loadtxt(file, delimiter=',', skiprows=1)
+            image = Image.fromarray(array, "L") # 'L' -> Grayscale, 'RGB' -> RGB
+            image.save(OutputImageNameAndPath)
 
 updaeObj = updateData()
 
-startDate = "2010-01-01"
+startDate = "2022-02-01"
 # startDate = "2021-11-01"
-# endDate = date.today()
+endDate = date.today()
 endDate = '2022-01-01'
 # print(startDate, endDate)
 shareArray=['SLM.JO','ABG.JO','SOL.JO','TKG.JO']
