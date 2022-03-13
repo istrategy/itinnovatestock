@@ -27,28 +27,34 @@ class updateData:
 
     def setLabel(self, lastValue,lastPlus1):
         target = ((lastPlus1/lastValue)-1) *100
-        retValue ="no_change"
+        retValue ="equal"
         if target < -5:
-            retValue = 'down_5perc'
+            retValue = 'down5'
         if target < -2 and target > -5:
-            retValue = 'down_2-5perc'
+            retValue = 'down2_5'
         if target < 0 and target > -2:
-            retValue = 'down_0-2perc'
+            retValue = 'down0_2'
         if target > 0 and target < 2:
-            retValue = 'up_0-2perc'
+            retValue = 'up0_2'
         if target > 2 and target < 5:
-            retValue = 'up_2-5perc'
+            retValue = 'up2_5'
         if target > 5:
-            retValue = 'up_5perc'
+            retValue = 'up5'
         return retValue, target
 
     def saveCSV(self, target,targetString,block):
-        folder = "./data/"+target[2]
+        folder = "./data/csv/"+target[2]
+        if not os.path.exists(folder):
+            os.makedirs(folder)
+        # targetfolder
+        folder = folder +"/"+ targetString[1][0]
         if not os.path.exists(folder):
             os.makedirs(folder)
 
         targetDate = target[0].strftime("%Y-%m-%d")
-        tfilename = targetString[0]  + "__" + targetDate +"__" + str(target[3]) +"_LABEL_"+targetString[1][0]+ '.csv'
+        # tfilename = targetString[0]  + "__" + targetDate +"__" + str(target[3]) +"_LABEL_"+targetString[1][0]+ '.csv'
+        tfilename = targetDate + '.csv'
+
         filename =  folder +"/"+ tfilename
         # print(filename)
         with open(filename, 'w', newline='', encoding='UTF8') as f:
@@ -163,26 +169,13 @@ class updateData:
         os.makedirs(name=result_dir, exist_ok=True)
         table_to_image(norm_data, [num_row, num_col], fea_dist_method, image_dist_method, save_image_size,
                        max_step, val_step, result_dir, error)
-        # fea_dist_method = 'Pearson'
-        # image_dist_method = 'Manhattan'
-        # error = 'squared'
-        # result_dir = '../Results/Test_2'
-        # os.makedirs(name=result_dir, exist_ok=True)
-        # table_to_image(norm_data, [num_row, num_col], fea_dist_method, image_dist_method, save_image_size,
-        #                max_step, val_step, result_dir, error)
         print("ConvertImage")
-
-    def ConvertCSV(inputCsvFile, OutputImageNameAndPath):
-        with open(inputCsvFile) as file:
-            array = np.loadtxt(file, delimiter=',', skiprows=1)
-            image = Image.fromarray(array, "L") # 'L' -> Grayscale, 'RGB' -> RGB
-            image.save(OutputImageNameAndPath)
 
 updaeObj = updateData()
 
-startDate = "2022-02-01"
+startDate = "2010-01-01"
 # startDate = "2021-11-01"
-endDate = date.today()
+# endDate = date.today()
 endDate = '2022-01-01'
 # print(startDate, endDate)
 shareArray=['SLM.JO','ABG.JO','SOL.JO','TKG.JO']

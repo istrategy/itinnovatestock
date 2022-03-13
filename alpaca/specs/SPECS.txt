@@ -1,0 +1,11 @@
+SHARE SYSTEM
+^^^^^^^^^^^^
+
+1. Download data
+
+2. Generate csv files
+3. Generate Images
+4. ML MODEL
+- notebook
+- automate
+5.
