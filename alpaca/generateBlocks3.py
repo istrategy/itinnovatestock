@@ -28,18 +28,10 @@ class updateData:
     def setLabel(self, lastValue,lastPlus1):
         target = ((lastPlus1/lastValue)-1) *100
         retValue ="equal"
-        if target < -5:
-            retValue = 'down5'
-        if target < -2 and target > -5:
+        if target < -2.5:
             retValue = 'down2_5'
-        if target < 0 and target > -2:
-            retValue = 'down0_2'
-        if target > 0 and target < 2:
-            retValue = 'up0_2'
-        if target > 2 and target < 5:
+        if target > 2.5:
             retValue = 'up2_5'
-        if target > 5:
-            retValue = 'up5'
         return retValue, target
 
     def saveCSV(self, target,targetString,block):

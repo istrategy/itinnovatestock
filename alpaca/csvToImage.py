@@ -29,7 +29,7 @@ class csvToImage:
 
 
 
-    def convertImage(self, inputCsvFile, targetFolder):
+    def convertImage(self, inputCsvFile, targetFolder, bigFiles):
 
         pixelArray = self.generatePixelArray();
         print('ConvertImage')
@@ -67,11 +67,11 @@ class csvToImage:
             # img.putpixel((8, 3), (200, 200, 0, 255))
             # img.putpixel((9, 3), (200, 200, 200, 255))
             img.save(os.path.join(targetFolder , saving_name))
+            if bigFiles == True:
+                resized_img = img.resize((cols,rows),resample=0,)
+                resized_img.save(os.path.join("./data/big/" , saving_name))
 
-            resized_img = img.resize((cols,rows),resample=0,)
-            resized_img.save(os.path.join(targetFolder , 'big_'+saving_name))
-
-    def convertImages(self, sourceFolder,targetFolder):
+    def convertImages(self, sourceFolder,targetFolder,bigFiles):
         for subdir, dirs, files in os.walk(sourceFolder):
             # print(dirs)
             for dir in dirs:
@@ -87,7 +87,7 @@ class csvToImage:
                         if not os.path.exists(targetpath):
                             os.makedirs(targetpath)
                         print(targetpath)
-                        self.convertImage(fullfilepath,targetpath)
+                        self.convertImage(fullfilepath,targetpath,bigFiles)
 
 
 
@@ -106,7 +106,6 @@ targetFolder = "./data/SLM.JO/"
 
 sourceFolder = "./data/csv/SLM.JO/"
 
-
 cObj = csvToImage()
 
 # cObj.convertImage(csvFile,targetFolder)
@@ -114,8 +113,8 @@ cObj = csvToImage()
 
 sourceFolder = "./data/csv/SLM.JO/"
 targetFolder = "./data/images/SLM.JO/"
-
-cObj.convertImages(sourceFolder,targetFolder)
+bigFiles = True
+cObj.convertImages(sourceFolder,targetFolder,bigFiles)
 
 
 # cObj.generatePixelArray()
