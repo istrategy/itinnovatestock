@@ -2,6 +2,8 @@ import numpy as np
 from PIL import Image
 import os
 import glob
+import pandas as pd
+import matplotlib.pyplot as plt
 
 class csvToImage:
     def generatePixelArrayFile(self):
@@ -27,6 +29,8 @@ class csvToImage:
                         break
         return returnArray
 
+
+
     def convertImage(self, inputCsvFile, targetFolder, bigFiles):
 
         pixelArray = self.generatePixelArray();
@@ -48,12 +52,7 @@ class csvToImage:
                 print(row)
                 for col in row:
                     print("LOOP:",colcounter, rowcounter)
-                    # print(pixelArray[int(col)][1])
-                    # print(pixelArray[int(col)][1][0])
-                    # img.putpixel((colcounter, rowcounter), (100, 100, 100, 255))
-                    # img.putpixel((colcounter, rowcounter), (pixelArray[col][1][0], pixelArray[col][1][1], pixelArray[col][1][2], 255))
-                    # print(pixelArray[int(col)][1][1],)
-                    # img.putpixel((colcounter, rowcounter), (100, 100, 100, 255))
+
                     arraypos = int(col *10)
                     img.putpixel((colcounter, rowcounter), (pixelArray[int(arraypos)][1][0], pixelArray[int(arraypos)][1][1], pixelArray[int(arraypos)][1][2], 255))
                     print(pixelArray[int(arraypos)])
@@ -68,6 +67,63 @@ class csvToImage:
             if bigFiles == True:
                 resized_img = img.resize((cols,rows),resample=0,)
                 resized_img.save(os.path.join("./data/big/" , saving_name))
+
+
+    def convertImageGraph(self, inputCsvFile, targetFolder, bigFiles):
+
+        # pixelArray = self.generatePixelArray();
+        print('ConvertImage')
+        blocksize = 50
+        base_name = inputCsvFile.split('\\')[-1]
+        saving_name = base_name[0:-4] + ".png"
+        print('csvToImage')
+        with open(inputCsvFile) as file:
+            array = np.loadtxt(file, delimiter=',', skiprows=1)
+            print(array.shape)
+            rows = array.shape[0] * blocksize
+            cols = array.shape[1] * blocksize
+            # print(rows)
+            # img = Image.new('RGB', (array.shape[1], array.shape[0]))
+            rowcounter = 0
+            numberRows = 1
+            for row in array:
+                if rowcounter >= numberRows:
+                    break
+                colcounter = 0
+                # print(row)
+                print(len(row))
+                header = list(range(1, len(row)+1))
+                Data = {'Day': header,
+                        'Price': row
+                        }
+
+                df = pd.DataFrame(Data)
+
+                plt.plot(df['Day'], df['Price'], color='red', marker='o')
+                # plt.title('Unemployment Rate Vs Year', fontsize=14)
+                # plt.xlabel('Year', fontsize=14)
+                # plt.ylabel('Unemployment Rate', fontsize=14)
+                plt.grid(True)
+                # plt.show()
+                plt.savefig(os.path.join(targetFolder , saving_name))
+                plt.close()
+                # for col in row:
+                #     print("LOOP:",colcounter, rowcounter)
+                #     arraypos = int(col *10)
+                #     img.putpixel((colcounter, rowcounter), (pixelArray[int(arraypos)][1][0], pixelArray[int(arraypos)][1][1], pixelArray[int(arraypos)][1][2], 255))
+                #     print(pixelArray[int(arraypos)])
+                #     colcounter += 1
+                print(row)
+                rowcounter += 1
+            #
+            # img.putpixel((3, 3), (200, 200, 100, 255))
+            # img.putpixel((8, 3), (200, 200, 0, 255))
+            # img.putpixel((9, 3), (200, 200, 200, 255))
+            # img.save(os.path.join(targetFolder , saving_name))
+            # if bigFiles == True:
+            #     resized_img = img.resize((cols,rows),resample=0,)
+            #     resized_img.save(os.path.join("./data/big/" , saving_name))
+
 
 
     def convertImages(self, sourceFolder,targetFolder,bigFiles):
@@ -113,7 +169,8 @@ cObj = csvToImage()
 sourceFolder = "./data/csv/SLM.JO/"
 targetFolder = "./data/images/SLM.JO/"
 bigFiles = True
-# cObj.convertImages(sourceFolder,targetFolder,bigFiles)
+cObj.convertImages(sourceFolder,targetFolder,bigFiles)
+
 
 
 
