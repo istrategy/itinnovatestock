@@ -42,13 +42,13 @@ class updateData:
             retValue = 'up5'
         return retValue, target
 
-    def saveCSV(self, target,targetString,block,savefolder):
+    def saveCSV(self, target, targetString, block, savefolder):
         folder = savefolder
         # folder = "./data/csv/"+target[2]
         if not os.path.exists(folder):
             os.makedirs(folder)
         # targetfolder
-        folder = folder +"/"+ targetString[1][0]
+        folder = folder + "/" + targetString[1][0]
         if not os.path.exists(folder):
             os.makedirs(folder)
 
@@ -56,7 +56,7 @@ class updateData:
         # tfilename = targetString[0]  + "__" + targetDate +"__" + str(target[3]) +"_LABEL_"+targetString[1][0]+ '.csv'
         tfilename = targetDate + '.csv'
 
-        filename =  folder +"/"+ tfilename
+        filename = folder + "/" + tfilename
         # print(filename)
         with open(filename, 'w', newline='', encoding='UTF8') as f:
             writer = csv.writer(f)
@@ -72,16 +72,10 @@ class updateData:
         batchArray = []
         targetArray =[]
         mydb = self.myconn()
-        # data vs labels (last labelPrec will not be part of the data and it will contain the trend)
-        dataCounter = int(blocksize - (blocksize * labelPerc))
-        labelCounter = blocksize - dataCounter
-
         while exitFunc == False:
             block = []
-            nameArray = []
             shareCounter = 0
-            shareArrayCounter = 0
-            for item in shareArray: # prices
+            for item in shareArray:
                 targetDateStart = fromDate
                 row = []
                 header = []
@@ -130,7 +124,6 @@ class updateData:
             if exitFunc == False:
                 batchArray.append(block)
                 self.saveCSV(target, targetString, block,paths['csv'])
-
             # fromDate = str(lastDate)
             fromDate = str(newStartDate)
             fromDate = str(secondDate)
@@ -196,7 +189,6 @@ class updateData:
         return returnDict
 
 
-
 updaeObj = updateData()
 
 startDate = "2010-01-01"
@@ -217,6 +209,7 @@ shareArray=['SLM.JO',
 ]
 
 blocksize = 20
+
 basepath = "F:\itinnovatedata"
 # savecsvfolder =
 paths = updaeObj.createSavepath(basepath,['csv','images'])
@@ -224,5 +217,3 @@ paths = updaeObj.createSavepath(basepath,['csv','images'])
 labelPerc = 0.25
 
 updaeObj.generateBlocks(shareArray, startDate, endDate, blocksize,paths, labelPerc)
-
-# updaeObj.test()
