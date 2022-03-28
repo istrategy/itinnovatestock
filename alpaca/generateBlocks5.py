@@ -42,22 +42,29 @@ class updateData:
             retValue = 'up5'
         return retValue, target
 
-    def saveCSV(self, target, targetString, block, savefolder):
-        folder = savefolder
+    def setLabelTrend(self, rowTarget):
+        x = range(0, len(rowTarget))
+        resultTrend = np.polyfit(x, rowTarget, 1)
+        retString = 'sidew'
+        if resultTrend[0] <= -5:
+            retString = 'down5'
+        if resultTrend[0] >= 5:
+            retString = 'up5'
+
+        return [retString, resultTrend]
+
+    def saveCSV(self, target, targetString, block, savefolder,rowTarget):
+        tpath = str(targetString[1][0])
+        folder = os.path.join(savefolder,tpath)
+
         # folder = "./data/csv/"+target[2]
         if not os.path.exists(folder):
             os.makedirs(folder)
-        # targetfolder
-        folder = folder + "/" + targetString[1][0]
-        if not os.path.exists(folder):
-            os.makedirs(folder)
 
-        targetDate = target[0].strftime("%Y-%m-%d")
-        # tfilename = targetString[0]  + "__" + targetDate +"__" + str(target[3]) +"_LABEL_"+targetString[1][0]+ '.csv'
-        tfilename = targetDate + '.csv'
+        tfilename = target + '.csv'
 
         filename = folder + "/" + tfilename
-        # print(filename)
+        print(filename)
         with open(filename, 'w', newline='', encoding='UTF8') as f:
             writer = csv.writer(f)
             for item in block:
@@ -72,14 +79,19 @@ class updateData:
         batchArray = []
         targetArray =[]
         mydb = self.myconn()
+        datablocknum = int(blocksize- (blocksize*labelPerc))
+        labelblocknum = blocksize - datablocknum
+
         while exitFunc == False:
             block = []
             shareCounter = 0
             for item in shareArray:
                 targetDateStart = fromDate
                 row = []
+                rowvol = []
                 header = []
-                itemSql = "select price.tdate, company.name, company.symbol, price.close from company \
+                rowTarget = []
+                itemSql = "select price.tdate, company.name, company.symbol, price.close, price.volume from company \
                                             left outer join price on company.id = price.company_id \
                                             WHERE company.symbol LIKE '" + item + "' and tdate >= '" + fromDate + "'  and tdate <= '" + toDate + "'\
                                             order by company.name,price.tdate limit 0,"+str(blocksize)
@@ -95,35 +107,50 @@ class updateData:
                 for x in myresult:
                     if colcounter == 2:
                         secondDate = x[0]
-                    header.append('col'+str(colcounter))
-                    row.append(x[3])
+
+                    if colcounter < datablocknum:
+                        header.append('col' + str(colcounter))
+                        row.append(x[3])
+                        rowvol.append(x[4])
+                    elif colcounter < datablocknum:
+                        header.append('col' + str(colcounter))
+                        row.append(x[3])
+                        rowvol.append(x[4])
+                        if shareCounter == 0:
+                            rowTarget.append(x[3])
+                    else:
+                        if shareCounter == 0:
+                            rowTarget.append(x[3])
                     lastDate = x[0]
                     lastValue= x[3]
                     colcounter += 1
                 if shareCounter == 0:
                     block.append(header)
+                    # block.append(rowTarget)
                 block.append(row)
+                block.append(rowvol)
                 # print(row)
                 # set target Array
-                if shareCounter == 0 and exitFunc == False:
+                if shareCounter == 0 and exitFunc == False: # get next date and set filename
+                    # print('TEST')
                     itemSql = "select price.tdate, company.name, company.symbol, price.close from company \
                                                                 left outer join price on company.id = price.company_id \
                                                                 WHERE company.symbol LIKE '" + item + "' and tdate > '" + str(lastDate) + "' LIMIT 1 "
-                    # print(itemSql)
+                    # # print(itemSql)
                     mycursor.execute(itemSql)
                     myresult = mycursor.fetchall()
                     for target in myresult:
-                        targetString = [str(fromDate), self.setLabel(lastValue,target[3]),target[2],lastValue, target[3]]
-                        targetArray.append([str(fromDate), self.setLabel(lastValue,target[3]),target[2],lastValue, target[3]])
+                        targetString = [str(fromDate), self.setLabelTrend(rowTarget)]
+                        targetArray.append([str(fromDate), targetString])
                         newStartDate = str(target[0])
-                        # self.saveCSV(target,targetString,row)
-                        # print(targetArray)
+
+
 
                 shareCounter += 1
 
             if exitFunc == False:
                 batchArray.append(block)
-                self.saveCSV(target, targetString, block,paths['csv'])
+                self.saveCSV(fromDate, targetString, block,paths['csv'],rowTarget)
             # fromDate = str(lastDate)
             fromDate = str(newStartDate)
             fromDate = str(secondDate)

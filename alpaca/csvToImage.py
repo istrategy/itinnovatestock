@@ -86,7 +86,7 @@ class csvToImage:
                         if not os.path.exists(targetpath):
                             os.makedirs(targetpath)
                         print(targetpath)
-                        self.convertImageGraph(fullfilepath,targetpath,bigFiles)
+                        self.convertImage(fullfilepath,targetpath,bigFiles)
 
 
 
@@ -110,10 +110,10 @@ cObj = csvToImage()
 # cObj.convertImage(csvFile,targetFolder)
 
 
-sourceFolder = "./data/csv/SLM.JO/"
-targetFolder = "./data/images/SLM.JO/"
+sourceFolder = "F://itinnovatedata//20220328_1546//csv"
+targetFolder = "F://itinnovatedata//20220328_1546//images"
 bigFiles = True
-# cObj.convertImages(sourceFolder,targetFolder,bigFiles)
+cObj.convertImages(sourceFolder,targetFolder,bigFiles)
 
 
 
