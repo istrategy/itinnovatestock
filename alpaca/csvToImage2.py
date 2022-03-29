@@ -33,7 +33,7 @@ class csvToImage:
 
     def convertImage(self, inputCsvFile, targetFolder, bigFiles):
 
-        pixelArray = self.generatePixelArray();
+        pixelArray = self.generaelAtePixrray();
         print('ConvertImage')
         blocksize = 50
         base_name = inputCsvFile.split('\\')[-1]
@@ -91,25 +91,50 @@ class csvToImage:
             colcounter = 0
             # print(row)
             print(len(array[0]))
-            header = list(range(1, len(array[0]) + 1))
-            Data = {'Day': header,
-                    'Price': array[1],
-                    'Vol':array[2]
-                    }
 
+            arrayCounter = 0
+            Data = {}
+            stopCounter = 2
+            for item in range(0, len(array)):
+                if arrayCounter == 0:
+                    header = list(range(1, len(array[0]) + 1))
+                    Data['header'] = header
+                Data['row'+str(arrayCounter)] = array[arrayCounter]
+                arrayCounter += 1
+                if arrayCounter >= stopCounter:
+                    break
             df = pd.DataFrame(Data)
 
             fig, ax1 = plt.subplots()
             color = 'tab:red'
-            ax1.plot(header, df['Price'], color=color)
-            ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
-
+            ax1.plot(header, df['row0'], color=color)
             color = 'tab:blue'
-            # ax2.set_ylabel('sin', color=color)  # we already handled the x-label with ax1
-            ax2.plot(header, df['Vol'], color=color)
-            ax2.tick_params(axis='y', labelcolor=color)
-            plt.grid(True)
+            ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
+            # ax2.set_ylabel('Volume', color=color)
+            ax2.set_ylim(0, 50000000)
+            # ax2.plot()
+            ax2.plot(header, df['row1'], color=color)
 
+
+            # for key, value in df.items():
+            #     if key != 'header':
+            #         color = 'tab:red'
+            #         ax1.plot(header, value, color=color)
+            #         ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
+            #         ax2.plot(header, value, color=color)
+            #     print(key, '->', value)
+
+
+
+
+
+            # color = 'tab:blue'
+            # # ax2.set_ylabel('sin', color=color)  # we already handled the x-label with ax1
+            # ax2.plot(header, df['Vol'], color=color)
+            # ax2.tick_params(axis='y', labelcolor=color)
+
+
+            plt.grid(True)
             fig.tight_layout()  # otherwise the right y-label is slightly clipped
             # plt.show()
             plt.savefig(os.path.join(targetFolder, saving_name))
