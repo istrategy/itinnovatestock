@@ -2,7 +2,6 @@ import pandas as pd
 import csv
 import mysql.connector
 import time
-
 from datetime import datetime, timedelta
 from datetime import date
 import yfinance as yf
@@ -13,9 +12,9 @@ class updateData:
 
     def myconn(self):
         myconn = mysql.connector.connect(
-            host="localhost",
-            user="root",
-            password="root",
+            host="192.168.1.100",
+            user="itinnovateml",
+            password="Ubuntu@@7",
             database="stock"
         )
         return myconn
@@ -61,16 +60,19 @@ class updateData:
 
 
 updaeObj = updateData()
-d = datetime.today() - timedelta(days=25)
+
+d = datetime.today() - timedelta(days=20)
 
 
 startDate = d.strftime('%Y-%m-%d')
-# startDate = "2022-03-10"
 endDate = date.today()
+
+
 # endDate = '2000-01-01'
 print(startDate, endDate)
-
-updaeObj.loadAll(startDate,endDate)
+test = updaeObj.myconn()
+print(test)
+# updaeObj.loadAll(startDate,endDate)
 
 # endDate = '2022-01-31'
 # updaeObj.loadAll(startDate,endDate)
