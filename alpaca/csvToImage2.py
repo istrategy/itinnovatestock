@@ -181,9 +181,9 @@ cObj = csvToImage()
 
 # cObj.convertImage(csvFile,targetFolder)
 
-
-sourceFolder = "F://itinnovatedata//20220328_1546//csv"
-targetFolder = "F://itinnovatedata//20220328_1546//images"
+# F:\itinnovatedata\20220401_224126\images
+sourceFolder = "F://itinnovatedata//20220401_224126//csv"
+targetFolder = "F://itinnovatedata//20220401_224126//images"
 bigFiles = True
 cObj.convertImages(sourceFolder,targetFolder,bigFiles)
 

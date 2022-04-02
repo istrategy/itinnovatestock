@@ -11,7 +11,7 @@ import json
 import os
 import csv
 from functions.IGTD_Functions import min_max_transform, table_to_image
-
+import matplotlib.pyplot as plt
 
 class updateData:
     # filename = './data/JSE202202151d.csv'
@@ -53,21 +53,63 @@ class updateData:
 
         return [retString, resultTrend]
 
-    def saveCSVname(self, basepath, targetsubfolder, dataFrame):
-        folder = os.path.join(basepath,targetsubfolder)
+    def saveCSVname(self, basepath, targetsubfolder, dataFrame,fullDF):
+
+        folder = os.path.join(basepath['csv'],targetsubfolder)
+
+        if not os.path.exists(folder):
+            os.makedirs(folder)
+        folderimages = os.path.join(basepath['images'], targetsubfolder)
+
+        if not os.path.exists(folderimages):
+            os.makedirs(folderimages)
+
         # print(dataFrame)
         tDate =str(dataFrame['tdate'].values[-1])
         companyCode = dataFrame['symbol'].values[-1]
         # print((tDate))
         # print(str(companyCode))
-        if not os.path.exists(folder):
-            os.makedirs(folder)
+
 
         tfilename = companyCode +"_"+tDate + '.csv'
+        imageFilename = companyCode +"_"+tDate + '.png'
         # print(folder)
         print(tfilename)
         SavePath = os.path.join(folder,tfilename)
         dataFrame.to_csv(SavePath)
+
+        # take out last 5 records the aim is to predict it
+        dataFrame = dataFrame[:-5]
+
+        x = range(dataFrame.shape[0])
+        y = dataFrame["close"].values.tolist()
+        y2 = dataFrame["volume"].values.tolist()
+        # fig, ax = plt.subplots()
+        # ax.plot(x,y)
+        # ax.plot(x, y2)
+        # plt.show()
+
+        fig, ax1 = plt.subplots()
+
+        color = 'tab:red'
+        ax1.set_xlabel('time (s)')
+        ax1.set_ylabel('price', color=color)
+        ax1.plot(x,y, color=color)
+        ax1.tick_params(axis='y', labelcolor=color)
+
+        ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
+
+        color = 'tab:blue'
+        ax2.set_ylabel('volume', color=color)  # we already handled the x-label with ax1
+        ax2.plot(x, y2, color=color)
+        ax2.tick_params(axis='y', labelcolor=color)
+
+        fig.tight_layout()  # otherwise the right y-label is slightly clipped
+        plt.savefig(os.path.join(folderimages, imageFilename))
+
+
+
+
 
 
     def generateBlocks(self, shareArray, fromDate, toDate, blocksize,paths,labelPerc=0.25):
@@ -181,6 +223,7 @@ class updateData:
         mydb = self.myconn()
         mycursor = mydb.cursor()
         df = pd.read_sql(itemSql, mydb)
+        fullDF = df
         activeBlocks = df.shape[0]
         while activeBlocks >= blocksize:
             subframe = df[:blocksize]
@@ -191,12 +234,9 @@ class updateData:
             lastpart = subframe[blocksize-lastPartCtr:]
             # print(lastpart['close'])
             target = self.setLabelTrend(lastpart['close'])
-            self.saveCSVname(paths['csv'],target[0],subframe)
+            self.saveCSVname(paths,target[0],subframe,fullDF)
 
-            # print(lastpart)
-            # print(lastPartCtr)
-            # print(target)
-            # print("Last x cols",subframe[:] )
+
             df = df[blocksize:]
             # print(df.shape[0])
             activeBlocks = df.shape[0]
@@ -210,106 +250,6 @@ class updateData:
         for shareCode in shareArray:
             self.generateOneCompany(shareCode, fromDate, toDate, blocksize,paths,labelPerc)
 
-        # rowcounter =1
-        # arayCounter = 0
-        # resArray = []
-        # exitFunc = False
-        # batchArray = []
-        # targetArray =[]
-        # mydb = self.myconn()
-        # datablocknum = int(blocksize- (blocksize*labelPerc))
-        # labelblocknum = blocksize - datablocknum
-        #
-        # while exitFunc == False:
-        #     block = []
-        #     shareCounter = 0
-        #     for item in shareArray:
-        #         targetDateStart = fromDate
-        #         row = []
-        #         rowvol = []
-        #         header = []
-        #         rowTarget = []
-        #         itemSql = "select price.tdate, company.name, company.symbol, price.close, price.volume from company \
-        #                                     left outer join price on company.id = price.company_id \
-        #                                     WHERE company.symbol LIKE '" + item + "' and tdate >= '" + fromDate + "'  and tdate <= '" + toDate + "'\
-        #                                     order by company.name,price.tdate limit 0,"+str(blocksize)
-        #         # print(itemSql)
-        #         mycursor = mydb.cursor()
-        #         rowCounter = mycursor.execute(itemSql)
-        #         myresult = mycursor.fetchall()
-        #
-        #         if len(myresult) < blocksize:
-        #             exitFunc = True
-        #             break
-        #         colcounter = 1
-        #         for x in myresult:
-        #             if colcounter == 2:
-        #                 secondDate = x[0]
-        #
-        #             if colcounter < datablocknum:
-        #                 header.append('col' + str(colcounter))
-        #                 row.append(x[3])
-        #                 rowvol.append(x[4])
-        #             elif colcounter < datablocknum:
-        #                 header.append('col' + str(colcounter))
-        #                 row.append(x[3])
-        #                 rowvol.append(x[4])
-        #                 if shareCounter == 0:
-        #                     rowTarget.append(x[3])
-        #             else:
-        #                 if shareCounter == 0:
-        #                     rowTarget.append(x[3])
-        #             lastDate = x[0]
-        #             lastValue= x[3]
-        #             colcounter += 1
-        #         if shareCounter == 0:
-        #             block.append(header)
-        #             # block.append(rowTarget)
-        #         block.append(row)
-        #         block.append(rowvol)
-        #         # print(row)
-        #         # set target Array
-        #         if shareCounter == 0 and exitFunc == False: # get next date and set filename
-        #             # print('TEST')
-        #             itemSql = "select price.tdate, company.name, company.symbol, price.close from company \
-        #                                                         left outer join price on company.id = price.company_id \
-        #                                                         WHERE company.symbol LIKE '" + item + "' and tdate > '" + str(lastDate) + "' LIMIT 1 "
-        #             # # print(itemSql)
-        #             mycursor.execute(itemSql)
-        #             myresult = mycursor.fetchall()
-        #             for target in myresult:
-        #                 targetString = [str(fromDate), self.setLabelTrend(rowTarget)]
-        #                 targetArray.append([str(fromDate), targetString])
-        #                 newStartDate = str(target[0])
-        #
-        #
-        #
-        #         shareCounter += 1
-        #
-        #     if exitFunc == False:
-        #         batchArray.append(block)
-        #         self.saveCSV(fromDate, targetString, block,paths['csv'],rowTarget)
-        #     # fromDate = str(lastDate)
-        #     fromDate = str(newStartDate)
-        #     fromDate = str(secondDate)
-        #
-        #
-        #
-        # batchNp = np.array(batchArray)
-        # print(batchArray)
-        #
-        # # targetNp = np.array(targetArray)
-        # # print(print(targetNp))
-        #
-        # # pd.DataFrame(batchNp).to_csv("batch.csv")
-        # # print(batchArray)
-        # # print(targetArray)
-        # # print(lastDate)
-        #
-        # mycursor.close()
-        # mydb.close()
-        #
-        # return json.dumps(targetArray)
 
     def test(self):
         num_row = 2  # Number of pixel rows in image representation
