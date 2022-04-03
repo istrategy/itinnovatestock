@@ -75,9 +75,9 @@ learn.lr_find()
 learn = cnn_learner(dls, resnet50, metrics=error_rate)
 learn.lr_find()
 
-#learn.fine_tune(10)
+learn.fine_tune(10)
 
-learn.fit_one_cycle(10,lr_max=slice(10e-3, 10e-4))
+#learn.fit_one_cycle(10,lr_max=slice(10e-3, 10e-4))
 
 """## Evaluating the model
 
