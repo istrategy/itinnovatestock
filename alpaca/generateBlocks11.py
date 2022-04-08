@@ -91,31 +91,45 @@ class updateData:
 
         x = range(dataFrame.shape[0])
         y = dataFrame["close"].values.tolist()
+
         y2 = dataFrame["volume"].values.tolist()
         # fig, ax = plt.subplots()
         # ax.plot(x,y)
         # ax.plot(x, y2)
         # plt.show()
-
-        fig, ax1 = plt.subplots()
-
+        figure, axis = plt.subplots(2, 1,squeeze=False)
+        # print(axis.shape())
         color = 'tab:red'
-        ax1.set_xlabel('time (s)')
-        ax1.set_ylabel('price', color=color)
-        ax1.plot(x,y, color=color)
-        ax1.tick_params(axis='y', labelcolor=color)
+        axis[0,0].plot(x,y, color=color)
 
-        ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
+        color = 'tab:green'
 
-        color = 'tab:blue'
-        ax2.set_ylabel('volume', color=color)  # we already handled the x-label with ax1
-        ax2.plot(x, y2, color=color)
-        ax2.tick_params(axis='y', labelcolor=color)
-
-        fig.tight_layout()  # otherwise the right y-label is slightly clipped
-        plt.savefig(os.path.join(folderimages, imageFilename))
-
+        axis[1,0].bar(x, y2, color=color)
+        plt.show()
         plt.close()
+
+        # ax1.set_ylabel('price', color=color)
+        # ax1.plot(x,y, color=color)
+
+        # fig, ax1 = plt.subplots()
+        #
+        # color = 'tab:red'
+        # ax1.set_xlabel('time (s)')
+        # ax1.set_ylabel('price', color=color)
+        # ax1.plot(x,y, color=color)
+        # ax1.tick_params(axis='y', labelcolor=color)
+        #
+        # ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
+        #
+        # color = 'tab:blue'
+        # ax2.set_ylabel('volume', color=color)  # we already handled the x-label with ax1
+        # ax2.plot(x, y2, color=color)
+        # ax2.tick_params(axis='y', labelcolor=color)
+        #
+        # fig.tight_layout()  # otherwise the right y-label is slightly clipped
+        # plt.savefig(os.path.join(folderimages, imageFilename))
+        #
+        # plt.close()
 
 
 
@@ -359,6 +373,10 @@ paths = updaeObj.createSavepath(basepath,['csv','images'])
 updaeObj.generateBlocksExpanded(shareArray, startDate, endDate, blocksize,paths, labelPerc)
 
 #note
-# Generate all company files
+# Generate 20 days files
 # predict 1 / 0
-# TODO
+
+# IMPROVEMENT
+# DRAW GRAPHS ACCORDING TO UNIVERSAL SCALE PER STOCK
+# - SHARE PRICE
+# - volume bar chart
