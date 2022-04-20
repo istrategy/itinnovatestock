@@ -105,8 +105,8 @@ class updateData:
         color = 'tab:green'
 
         axis[1,0].bar(x, y2, color=color)
-        plt.show()
-        plt.close()
+        # plt.show()
+        # plt.close()
 
         # ax1.set_ylabel('price', color=color)
         # ax1.plot(x,y, color=color)
@@ -127,9 +127,9 @@ class updateData:
         # ax2.tick_params(axis='y', labelcolor=color)
         #
         # fig.tight_layout()  # otherwise the right y-label is slightly clipped
-        # plt.savefig(os.path.join(folderimages, imageFilename))
-        #
-        # plt.close()
+        plt.savefig(os.path.join(folderimages, imageFilename))
+
+        plt.close()
 
 
 
